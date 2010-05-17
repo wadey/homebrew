@@ -7,9 +7,9 @@ require 'formula'
 class Thrift <Formula
   homepage 'http://incubator.apache.org/thrift/'
   head 'http://svn.apache.org/repos/asf/incubator/thrift/trunk'
-  version '0.2.0'
-  url 'http://apache.dataphone.se/incubator/thrift/0.2.0-incubating/thrift-0.2.0-incubating.tar.gz'
-  md5 '9958c57c402c02171ba0bcc96183505c'
+  version '20100228.053011-r917130'
+  url 'http://gitweb.thrift-rpc.org/?p=thrift.git;spfx=thrift-instant-r917130;a=snapshot;h=754e9b4e4db7b14bd23bdf91d465601a48a27954;sf=tgz'
+  md5 '384ac4f01ca5de15abdbccb364355d8d'
 
   depends_on 'boost'
   
@@ -24,7 +24,8 @@ class Thrift <Formula
                          "--without-py",
                          # again, use gem
                          "--without-ruby",
-                         "--without-perl"
+                         "--without-perl",
+                         "--without-php"
     system "make"
     system "make install"
   end
