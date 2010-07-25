@@ -15,7 +15,7 @@ class Tsocks <Formula
 
   def install
     system "autoconf"
-    system "./configure", "--prefix=#{prefix}", "--disable-debug", "--disable-dependency-tracking"
+    system "./configure", "--prefix=#{prefix}", "--disable-debug", "--disable-dependency-tracking", "--with-conf=#{etc + 'tsocks.conf'}"
     system "make && make install"
     (etc + "tsocks.conf").write(File.read('tsocks.conf.simple.example'))
   end
