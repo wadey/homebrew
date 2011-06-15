@@ -8,7 +8,7 @@ class Thrift <Formula
   homepage 'http://incubator.apache.org/thrift/'
   head 'http://svn.apache.org/repos/asf/incubator/thrift/trunk'
   version '20100228.053011-r917130'
-  url 'http://gitweb.thrift-rpc.org/?p=thrift.git;spfx=thrift-instant-r917130;a=snapshot;h=754e9b4e4db7b14bd23bdf91d465601a48a27954;sf=tgz'
+  url 'http://dl.dropbox.com/u/119351/thrift-20100228.053011-r917130.tar.gz'
   md5 '384ac4f01ca5de15abdbccb364355d8d'
 
   depends_on 'boost'
